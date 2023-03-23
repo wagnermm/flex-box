@@ -25,7 +25,29 @@ module.exports = {
                     'css-loader'
                 ]
             },
-
+            {
+                test: /\.js$/i,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            },
+            {
+                test: /\.(png|jp(e*)g|svg)$/,  
+                dependency: { not: ['url'] },
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192,
+                        }
+                    },
+                ],
+                type: 'javascript/auto'
+            }
         ]
     },
     plugins: [
