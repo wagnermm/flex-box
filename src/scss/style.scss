@@ -1,5 +1,6 @@
 $color-font: #fff;
 $color-bg-default: #33f;
+$color-bg-boxes: #fd3;
 $font-default: Arial, Helvetica, sans-serif;
 
 body {
@@ -25,4 +26,37 @@ h1 {
         height: auto;
     }
 
+}
+
+%box {
+    background: $color-bg-boxes;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.box__container {
+    @extend %box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+.box__container2 {
+    @extend %box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.box {
+    border-radius: 1rem;
+    border: 2px solid $color-font;
+    text-align: center;
+    //margin: 1rem;
+    width: 10rem;
+    height: 10rem;
 }

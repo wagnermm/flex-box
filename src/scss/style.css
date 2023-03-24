@@ -21,3 +21,31 @@ h1 {
   width: 100%;
   height: auto;
 }
+
+.box__container, .box__container2 {
+  background: #fd3;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.box__container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.box__container2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.box {
+  border-radius: 1rem;
+  border: 2px solid #fff;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+}
