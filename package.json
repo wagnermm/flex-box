@@ -2,7 +2,7 @@
   "name": "simulator",
   "version": "1.0.0",
   "description": "Estrutura básica de projetos front-end para estudos de HTML, JS, CSS / SASS.",
-  "main": "webpack.config.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js --mode production",
