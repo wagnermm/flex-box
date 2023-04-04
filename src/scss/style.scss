@@ -1,29 +1,37 @@
 $color-primary: #195484;
 $color-secondary: #f58220;
-$font-color-primary: #ffff;
+$font-color-primary: #ffffff;
 $font-color-secondary: #454545;
 $font-default: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
-
-
-@import 'vitrine';
-@import 'fonts';
-@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+$font-size-nav: 1.8rem;
 
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: $color-primary;
     font-family: $font-default;
+    margin: 0;
 }
 
 h1 {
     color: $font-color-primary;
     text-align: center;
     margin-top: 4rem;
+}
+
+article {
+
+    h1 {
+        color: $color-secondary;
+        font-size: 3rem;
+        text-align: left;
+    }
+
 }
 
 h2 {
@@ -35,12 +43,18 @@ h2 {
     text-shadow: 1px 2px 8px #FFFFFF;
 }
 
+#root,
 header,
 section,
 footer {
     display: block;
     float: left;
     width: 100%;
+}
+
+section {
+    padding: 4rem 0;
+    margin: 0;
 }
 
 .container {
@@ -50,15 +64,13 @@ footer {
     max-width: 90vw;
 }
 
-header .container {
-    .hero {
-        background-image: url('../assets/images/banner-lance-me.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 20rem;
-    }
-}
 
-#sobre {
-    background-color: white;
-}
+@import 'animation';
+@import 'fonts';
+@import 'footer';
+@import 'header';
+@import 'nav';
+@import 'produtos';
+@import 'sobre';
+@import 'steps';
+@import 'vitrine';
