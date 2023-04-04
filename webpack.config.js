@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpack = require('html-webpack-plugin')
 const MiniCssExtract = require('mini-css-extract-plugin')
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
     entry: './src/js/index.js',
