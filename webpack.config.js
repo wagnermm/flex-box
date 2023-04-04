@@ -39,6 +39,7 @@ module.exports = {
             {
                 test: /\.(png|jp(e*)g|svg)$/,  
                 dependency: { not: ['url'] },
+                type: 'assets',
                 use: [
                     {
                         loader: 'url-loader',
@@ -48,6 +49,10 @@ module.exports = {
                     },
                 ],
                 type: 'javascript/auto'
+            },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
             }
         ]
     },
