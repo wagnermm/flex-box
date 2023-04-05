@@ -1,7 +1,7 @@
 {
-  "name": "simulator",
+  "name": "css-advanced",
   "version": "1.0.0",
-  "description": "Estrutura básica de projetos front-end para estudos de HTML, JS, CSS / SASS.",
+  "description": "Conceitos avançados de css para evolução de projetos front-end.",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
