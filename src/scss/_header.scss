@@ -18,9 +18,8 @@ header .container {
         }
 
         img {
-            animation: balloon-animation 5s linear;
+            animation: balloon-animation 5s linear infinite;
             position: absolute;
-            bottom: 15rem;
         }
     }
 

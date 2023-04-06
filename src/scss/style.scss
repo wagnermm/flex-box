@@ -9,13 +9,13 @@ $font-size-nav: 1.8rem;
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
 body {
     background-color: $color-primary;
     font-family: $font-default;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -73,3 +73,4 @@ section {
 @import 'sobre';
 @import 'steps';
 @import 'vitrine';
+@import 'responsive';
