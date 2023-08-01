@@ -12,17 +12,37 @@
     <div id="root">
         <header>
             <div class="container">
-                <h2 class="logo">
-                    <img src="./assets/images/logo-lance.png" alt="Lance Negócios">
-                </h2>
-                <nav class="nav">
-                    <a class="nav__item" href="#sobre">Sobre</a>
-                    <a class="nav__item" href="#produtos">Produtos</a>
-                    <a class="nav__item" href="#como-funciona">Como funciona</a>
-                </nav>
+                <div class="header-container">
+                    <div class="logo">
+                        <img src="./assets/images/logo-lance.png" alt="Lance Negócios">
+                    </div>
+                    <nav class="nav">
+                        <a class="nav__item" href="#sobre">Sobre</a>
+                        <a class="nav__item" href="#produtos">Produtos</a>
+                        <a class="nav__item" href="#como-funciona">Como funciona</a>
+                    </nav>
+                    <nav class="nav-mobile">
+                        <div class="border">
+                            <a class="nav__item" href="#sobre">Sobre</a>
+                        </div>
+                        <div class="border">
+                            <a class="nav__item" href="#produtos">Produtos</a>
+                        </div>
+                        <div class="border">
+                            <a class="nav__item" href="#como-funciona">Como funciona</a>
+                        </div>
+                    </nav>
+                    <div class="btn-menu">
+                        <div className='line1'></div>
+                        <div className='line2'></div>
+                        <div className='line3'></div>
+                    </div>
+                </div>
                 <div class="hero">
                     <img src="./assets/images/banner-lance-me.png" alt="balloon">
-                    <h1>Veja como acelerar a criação do seu negócio</h1>
+                    <div class="hero-text">
+                        <h1>Veja como acelerar a criação do seu negócio</h1>
+                    </div>
                 </div>
             </div>
         </header>
