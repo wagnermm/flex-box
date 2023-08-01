@@ -9,6 +9,14 @@ header {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            .logo {
+                width: 100%;
+            }
+            .nav {
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+            }
             .nav-mobile {
                 display: none;
             }

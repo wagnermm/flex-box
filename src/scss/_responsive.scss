@@ -68,11 +68,22 @@
                 text-align: center;
                 width: 100vw;
                 height: 100vh;
-                background: $color-primary;
-                opacity: 85%;
+                background: rgb(1, 1, 26);
+                opacity: 95%;
                 color: $font-color-primary;
                 z-index: 3;
                 visibility: hidden;
+                .close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 50px;
+                    height: 35px;
+                    background: $color-secondary;
+                    border: 1px solid $color-primary;
+                    border-radius: 5px;
+                    font-size: 3rem;
+                }
                 .border {
                     width: 100%;
                     border-bottom: 2px solid $color-secondary;

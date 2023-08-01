@@ -78,87 +78,76 @@ section {
   font-weight: normal;
   font-style: normal;
 }
-footer {
-  display: flex;
+#footer {
   background-color: rgba(1, 1, 26, 0.6);
+  display: flex;
+  justify-content: space-around;
   padding: 3rem 3rem 5rem;
 }
-footer i {
-  font-size: 2rem;
+#footer .contact-info i {
+  font-size: 1rem;
   padding: 0.3rem;
 }
-footer a {
+#footer .contact-info a {
   color: #ffffff;
 }
-footer .contact-info,
-footer .links-container {
-  padding: 15px;
-  text-align: center;
+#footer .contact-info p {
+  margin-bottom: 1rem;
 }
-footer .footer-brand {
+#footer .contact-info p i {
+  background-color: transparent;
+  padding: 0;
+  color: #ffffff;
+}
+#footer .contact-info .footer-brand {
   margin-bottom: 2rem;
 }
-footer .footer-brand h2 {
+#footer .contact-info .footer-brand h2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #195484;
   margin-bottom: 0.5rem;
-  padding: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid #195484;
+  padding: 1rem;
 }
-footer .footer-brand p {
-  color: #ffffff;
-}
-footer .contact-info p {
+#footer .contact-info .social-networks p {
   margin-bottom: 1rem;
 }
-footer .contact-info i {
-  background-color: transparent;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  border: 1px solid #195484;
-}
-footer .social-networks p {
-  margin-bottom: 1rem;
-}
-footer .networks {
+#footer .contact-info .social-networks .networks {
   margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
 }
-footer .networks i {
-  padding: 1.2rem;
-  margin-right: 1rem;
+#footer .contact-info .social-networks .networks i {
+  padding: 1rem;
 }
-footer .links-container h4 {
+#footer .links-container {
+  width: 20%;
+}
+#footer .links-container h4 {
   text-transform: uppercase;
-  margin-bottom: 3rem;
   color: #f58220;
-  font-size: 12px;
+  margin-bottom: 3rem;
 }
-footer .links-container nav {
+#footer .links-container nav {
   display: flex;
   flex-direction: column;
 }
-footer .links-container nav a {
+#footer .links-container nav a {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #195484;
-  font-size: 16px;
-  text-decoration: none;
 }
-footer .phone-number {
+#footer .links-container .phone-number {
   display: flex;
+  color: #f58220;
   border: 1px solid #195484;
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
+}
+#footer .links-container .phone-info {
   color: #f58220;
 }
-footer .phone-number p {
-  color: #ffffff;
-}
-footer .phone-info {
-  color: #f58220;
-}
-footer p {
+#footer .links-container p {
   color: #f58220;
   font-size: 1.6rem;
 }
@@ -174,6 +163,17 @@ header .container .header-container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+header .container .header-container .logo {
+  width: 100%;
+}
+header .container .header-container .nav {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+header .container .header-container .nav-mobile {
+  display: none;
 }
 header .container .header-container .btn-menu {
   display: none;
@@ -364,10 +364,45 @@ header .container .hero img {
     width: 3rem;
     height: 0.5rem;
     margin: 0.5rem;
-    background-color: #fff;
+    background-color: #ffffff;
+  }
+  header .container .nav-mobile {
+    position: fixed;
+    top: 0;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12rem;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(1, 1, 26);
+    opacity: 95%;
+    color: #ffffff;
+    z-index: 3;
+    visibility: hidden;
+  }
+  header .container .nav-mobile .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 35px;
+    background: #f58220;
+    border: 1px solid #195484;
+    border-radius: 5px;
+    font-size: 3rem;
+  }
+  header .container .nav-mobile .border {
+    width: 100%;
+    border-bottom: 2px solid #f58220;
+  }
+  header .container .nav-mobile .border a {
+    font-size: 4rem;
   }
   header .container .btn-menu {
-    display: block;
+    display: block !important;
   }
   header .container .hero img {
     width: 100%;
